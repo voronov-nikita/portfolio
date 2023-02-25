@@ -1,3 +1,6 @@
 body{
-    background-color: black;
+    background-image: url(/img/back.jpg); /* Адрес картинки */
+    background-size: cover; /* Заполнение */
 }
+
+p{color:red;}
