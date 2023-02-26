@@ -6,11 +6,49 @@ body{
 
 .new_pos{
     color:white;
-    font-size: 60px;
+    font-size: 20px;
+    position:absolute;
+	left:0%;
 }
 
-p{
-    color:white;
-    font-size: 30px;
+.l-side-nav{
+    color:#fff;
+    position:absolute;
+	left:0;
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+    height:100%;
+	-webkit-box-align:center;
+	-webkit-align-items:center;
+	-ms-flex-align:center;
+	align-items:center;
+}
+
+.side-nav{
+    position:relative;
+	display:-webkit-box;
+	display:-webkit-flex;
+	display:-ms-flexbox;
+	display:flex;
+	width:100px;
+	height:70%;
+	max-height:750px;
+	-webkit-box-orient:vertical;
+	-webkit-box-direction:normal;
+	-webkit-flex-direction:column;
+	-ms-flex-direction:column;
+	flex-direction:column;
+	-webkit-justify-content:space-around;
+	-ms-flex-pack:distribute;
+	justify-content:space-around;
+	margin:0;
+    padding:0;
+	list-style-position:inside;
+	z-index:10
+}
+
+.is-active{
     
 }
