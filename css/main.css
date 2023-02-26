@@ -1,9 +1,16 @@
 body{
-    /* Не работает!!! */
+    font-family: 'Oswald', sans-serif;
     background-color:black;
 }
 
+
+.new_pos{
+    color:white;
+    font-size: 60px;
+}
+
 p{
-    color:red;
+    color:white;
+    font-size: 30px;
     
 }
