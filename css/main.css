@@ -1,78 +1,16 @@
 body{
-    font-family: 'Oswald', sans-serif;
-    background-color:black;
+	background-color: black;
 }
 
+.main-text{
+	color: white;
+	font-size: 16px;
 
-.new_pos{
-    color:white;
-    font-size: 20px;
 }
 
-.l-side-nav{
-    color:#fff;
-    position:absolute;
-	left:0;
-	display:-webkit-box;
-	display:-webkit-flex;
-	display:-ms-flexbox;
-	display:flex;
-    height:100%;
-	-webkit-box-align:center;
-	-webkit-align-items:center;
-	-ms-flex-align:center;
-	align-items:center;
-}
-
-.side-nav{
-    position:relative;
-	display:-webkit-box;
-	display:-webkit-flex;
-	display:-ms-flexbox;
-	display:flex;
-	width:100px;
-	height:70%;
-	max-height:750px;
-	-webkit-box-orient:vertical;
-	-webkit-box-direction:normal;
-	-webkit-flex-direction:column;
-	-ms-flex-direction:column;
-	flex-direction:column;
-	-webkit-justify-content:space-around;
-	-ms-flex-pack:distribute;
-	justify-content:space-around;
-	margin:0;
-    padding:0;
-	list-style-position:inside;
-	z-index:10
-}
-
-.header{
-    position:absolute;
-	top:0;
+.header-text{
+	color:white;
+	font-size: 30px;
+	position: absolute;
 	left:50%;
-	display:-webkit-box;
-	display:-webkit-flex;
-	display:-ms-flexbox;
-	display:flex;
-	width:100%;
-	height:70px;
-	-webkit-box-align:center;
-	-webkit-align-items:center;
-	-ms-flex-align:center;
-	align-items:center;
-	z-index:10
-}
-
-.header_logo{
-    display:-webkit-box;
-    display:-webkit-flex;
-    display:-ms-flexbox;
-    display:flex;
-    -webkit-box-align:center;
-    -webkit-align-items:center;
-    -ms-flex-align:center;
-    align-items:center;
-    text-decoration:none;
-    color:#fff
 }
