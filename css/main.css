@@ -2,15 +2,22 @@ body{
 	background-color: black;
 }
 
-.main-text{
-	color: white;
-	font-size: 16px;
-
-}
-
 .header-text{
 	color:white;
-	font-size: 30px;
+	font-size: 80px;
 	position: absolute;
-	left:50%;
+	top:10%;
+	margin-left: 40%;
+    margin-right: 50%;
+	text-align: center;
+}
+
+.image-logo{
+	width: 40%;
+	height: 40%;
+	top:1%;
+	margin-left: 40%;
+    margin-right: 50%;
+	align-items: center;
+	
 }
