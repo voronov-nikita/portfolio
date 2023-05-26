@@ -17,6 +17,10 @@ body{
 	color:rgb(125, 125, 125);
 }
 
+.about-link{
+	color:rgb(178, 148, 0);
+}
+
 header{
 	display: flex;
 
@@ -57,5 +61,4 @@ header{
 	width: auto;
 	height: 10px;
 	left:0%;
-
 }
