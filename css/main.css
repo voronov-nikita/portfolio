@@ -2,24 +2,28 @@ body{
 	background-color: black;
 }
 
+
+.about-link{
+	color:rgb(178, 148, 0);
+}
+
+
 .header-text{
 	color:white;
-	font-size: 80px;
+	font-size: 500%;
 	position: absolute;
 	top: 30%;
 	margin-left: 60%;
 	margin-right: 30%;
 	text-align: center;
+	height:100px;
+	animation: slide-up 4s ease-in-out;
 }
 
-.header-links{
-	margin-right: 20px;
-	color:rgb(125, 125, 125);
+.glow-text{
+	animation: PulseText 7s ease-in-out infinite;
 }
 
-.about-link{
-	color:rgb(178, 148, 0);
-}
 
 header{
 	display: flex;
@@ -36,6 +40,7 @@ header{
 	font-size:18px;
 	font-family:'Times New Roman', Times, serif;
 	color:#b8b8b8;
+	margin-left: 1.5%;
 }
 
 .image-logo-avatar{
@@ -52,8 +57,18 @@ header{
 	color: white;
 	font-family:'Courier New', Courier, monospace;
 	font-size: 26px;
-	margin-left: 5%;
 	text-align: left;
+}
+
+.about-info h3{
+	color:yellowgreen;
+	padding-left:0%;
+	text-align: center;
+	font-family: 'Times New Roman', Times, serif;
+}
+
+.about-info h3:hover{
+	color:rgb(196, 255, 79);
 }
 
 .line-split{
@@ -62,3 +77,102 @@ header{
 	height: 10px;
 	left:0%;
 }
+
+
+.image-links{
+	display: inline-flex;
+	position: absolute;
+	position: relative;
+	left: 20%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	color: rgba(255, 255, 255, 0);
+	text-align: center;
+
+}
+
+.image-links p1{
+	margin-right: 20%;
+	
+}
+
+.image-links p2{
+	margin-right: 20%;
+}
+
+.image-links p3{
+	margin-right: 20%;
+}
+
+.image-links p4{
+	margin-right: 20%;
+}
+
+.image-links p5{
+	margin-right: 20%;
+}
+
+
+.image-links p1:hover{
+	color: azure;
+	animation: icon-size 1.5s ease-in-out infinite;
+}
+.image-links p2:hover{
+	color: azure;
+	animation: icon-size 1.5s ease-in-out infinite;
+}
+.image-links p3:hover{
+	color: azure;
+	animation: icon-size 1.5s ease-in-out infinite;
+}
+.image-links p4:hover{
+	color: azure;
+	animation: icon-size 1.5s ease-in-out infinite;
+}
+.image-links p5:hover{
+	color: azure;
+	animation: icon-size 1.5s ease-in-out infinite;
+}
+
+
+@keyframes PulseText {
+	0% {
+		text-shadow: 1px 1px 2px white, 0 0 1em rgba(255, 255, 255, 0), 0 0 0.2em red;
+	  }
+	25% {
+		text-shadow: 1px 1px 2px white, 0 0 1em rgba(255, 255, 255, 0), 0 0 0.2em green;
+	  }
+	50% {
+		text-shadow: 1px 1px 2px white, 0 0 1em rgba(255, 255, 255, 0), 0 0 0.2em blue;
+	  }
+	75%{
+		text-shadow: 1px 1px 2px white, 0 0 1em rgba(255, 255, 255, 0), 0 0 0.2em green;
+	}
+	100%{
+		text-shadow: 1px 1px 2px white, 0 0 1em rgba(255, 255, 255, 0), 0 0 0.2em red;
+	}
+}
+
+@keyframes slide-up {
+	0%{
+		transform: translateY(100%);
+	}
+	100%{
+		transform: translateY(0%);
+	}
+}
+
+@keyframes icon-size {
+	0%{
+		transform: scale(1);
+	}
+	50%{
+		transform: scale(1.2);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+
+  
+  

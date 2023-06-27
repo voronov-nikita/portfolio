@@ -3,8 +3,10 @@
     <meta charset="UTF-8">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/footer-css.css">
+    <link rel="stylesheet" href="css/partical.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="/img/main-icon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Tilt+Warp&display=swap" rel="stylesheet">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,28 +16,26 @@
 
 
 <body>
-    <div>
-        <header class="header-text-head">
-            <a class="header-links" href="#main">Главная</a>
-            <a class="header-links" href="#about">О нас</a>
-            <a class="header-links" href="#contact">Контакты</a>
-        </header>
-    </div>
+    <div class="particles"></div>
     <div>
         <div class="header-text">
-            Voronov Nikita
+            <span class="glow-text">Voronov Nikita</span>
         </div>
         <div class="image-logo-avatar">
-            <img src="img/logo.png" style="width: 100%; height: 100%;">
+            <img src="img/logo.png" style="width: 80%; height: 80%;">
         </div>
     </div>
 
-    <div class="line-split"></div>
+    <!-- <div class="line-split"></div> -->
 
+    <br>
+    <br>
     <div>
         <div class="about-info">
-            <p>Hi, I'm Voronov Nikita, my nickname - NIK.</p>
-            <p class="main-about-text">Every day when I sit down at my computer, 
+            <h3><u>I'm Voronov Nikita</u></h3>
+            <p class="main-about-text">
+                &nbsp;&nbsp;My nickname - NIK.<br>
+                &nbsp;&nbsp;Every day when I sit down at my computer, 
                 I ask myself what I want to do in the future. 
                 It is clear that this will be connected with the world of IT technologies, 
                 but there are very, very many options. 
@@ -50,26 +50,42 @@
         </div>
     </div>
 
-    <div class="line-split"></div>
+    <!-- <div class="line-split"></div> -->
 
+    <br>
+    <br>
     <div>
         <div class="about-info">
-            <p>About My Progress</p>
-            <p class="main-about-text">Now I have only a year left until I graduate from my school,
-                 but I hope to be in time in many things. Over the past year,
-                  I have managed to try myself in web development (my-sait),
-                   desktop application development (<a class="about-link" href="https://github.com/voronov-nikita/python_spamer">python_spamer</a>, 
-                   <a class="about-link" href="https://github.com/voronov-nikita/individual-project-2022_2023">individual-project-2022_2023</a>).
-                   Also this year I tried myself in robot programming, 
-                   a little in mobile development and worked with 
-                   the Arduino microcontroller (<a class="about-link" href="https://github.com/voronov-nikita/Arduino-mini-Projects">Arduino-mini-Projects</a>) 
-                   and the Raspberry pi microcomputer (<a class="about-link" href="https://github.com/voronov-nikita/greenhouse-model">greenhouse-model</a>).
-                 I also managed to try myself in creating a Telegram bot (<a class="about-link" href="https://github.com/voronov-nikita/Telegram-bot">Telegram-bot</a>).</p>
+            <h3><u>About My Progress</u></h3>
+            <p class="main-about-text">
+                &nbsp;&nbsp;Now I have only a year left until I graduate from my school,
+                but I hope to be in time in many things. Over the past year,
+                I have managed to try myself in web development (my-sait),
+                desktop application development (<a class="about-link" href="https://github.com/voronov-nikita/python_spamer">python_spamer</a>, 
+                <a class="about-link" href="https://github.com/voronov-nikita/individual-project-2022_2023">individual-project-2022_2023</a>).
+                Also this year I tried myself in robot programming, 
+                a little in mobile development and worked with 
+                the Arduino microcontroller (<a class="about-link" href="https://github.com/voronov-nikita/Arduino-mini-Projects">Arduino-mini-Projects</a>) 
+                and the Raspberry pi microcomputer (<a class="about-link" href="https://github.com/voronov-nikita/greenhouse-model">greenhouse-model</a>).
+                I also managed to try myself in creating a Telegram bot (<a class="about-link" href="https://github.com/voronov-nikita/Telegram-bot">Telegram-bot</a>).</p>
         </div>
     </div>
-
+    <div class="image-links">
+        <p1><a href="/python.html"><img src="img/image-python.png" width="80" 
+            height="80" alt="Пример"></a>Python</p1>
+        <p2><a href="/css.html"><img src="img/image-css.png" width="80" 
+            height="80" alt="Пример"></a>CSS</p2>
+        <p3><a href="https://google.com"><img src="img/image-html.png" width="80" 
+            height="80" alt="Пример"></a>HTML</p3>
+        <p4><a href="https://google.com"><img src="img/image-c.png" width="80" 
+            height="80" alt="Пример"></a>C++</p4>
+        <p5><a href="https://google.com"><img src="img/image-csharp.png" width="80" 
+            height="80" alt="Пример"></a>C#</p5>
+    </div>
+    <br><br>
+    <br><br>
     <div class="line-split"></div>
-
+<!------------------------------ THE FOOTER ------------------------------------------>
     <footer class="site-footer">
         <div class="container">
             <div class="row">
@@ -88,28 +104,29 @@
                 <div class="col-xs-6 col-md-3">
                     <h6>Programming<br>Language</h6>
                     <ul class="footer-links">
-                        <li><a href="#">C++</a></li>
-                        <li><a href="#">HTML</a></li>
-                        <li><a href="#">CSS</a></li>
-                        <li><a href="#">Python</a></li>
-                        <li><a href="#">C#</a></li>
+                        <li><a href="https://ru.wikipedia.org/wiki/C%2B%2B">C++</a></li>
+                        <li><a href="https://ru.wikipedia.org/wiki/HTML">HTML</a></li>
+                        <li><a href="https://ru.wikipedia.org/wiki/CSS">CSS</a></li>
+                        <li><a href="https://ru.wikipedia.org/wiki/Python">Python</a></li>
+                        <li><a href="https://ru.wikipedia.org/wiki/C_Sharp">C#</a></li>
                     </ul>
                 </div>
     
                 <div class="col-xs-6 col-md-3">
-                    <h6>Useful<br>Links</h6>
+                    <h6>The best<br>Projects</h6>
                     <ul class="footer-links">
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">1</a></li>
-                        <li><a href="#">2</a></li>
-                        <li><a href="#">3</a></li>
-                        <li><a href="#">4</a></li>
+                        <li><a href="https://github.com/voronov-nikita/individual-project-2022_2023">Individual project 2022-2023</a></li>
+                        <li><a href="https://github.com/voronov-nikita/python_spamer">Python Spamer</a></li>
+                        <li><a href="https://github.com/voronov-nikita/Solving-the-Traveling-Salesman-problem">Solving the Traveling Salesman problem</a></li>
+                        <li><a href="https://github.com/voronov-nikita/Telegram-bot">Telegram bot</a></li>
+                        <li><a href="https://github.com/voronov-nikita/Unity_Scripts">Unity Scripts</Script></a></li>
                     </ul>
                 </div>
             </div>
             <hr>
         </div>
+        <div class="the-end"><img src="/img/main-logo.png" width="7%" height="7%" alt="Logo">   Create by Voronov Nikita 2023 ©</div>
     </footer>
-    
+    <script src="/js/partical.js"></script>
 </body>
 </html>

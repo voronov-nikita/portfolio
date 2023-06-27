@@ -1,0 +1,41 @@
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.python-image{
+    margin-left: 35%;
+    position:relative;
+}
+
+.python-image img{
+    margin-left: 10%;
+}
+
+.python-image h1{
+    color:beige;
+    display: flex;
+    font-size: 52px;
+    
+    animation: RGB-light 3s infinite;
+}
+
+.python-cards{
+    position: relative;
+    display: flex;
+}
+
+
+@keyframes RGB-light {
+    0%{
+        color:rgb(106, 0, 14);
+    }
+    25%{
+        color:rgb(52, 94, 0);
+    }
+    70%{
+        color: rgb(0, 0, 86);
+    }
+    100%{
+        color:rgb(106, 0, 14);
+    }
+}
