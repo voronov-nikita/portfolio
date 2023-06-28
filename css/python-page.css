@@ -12,11 +12,17 @@ body{
 }
 
 .python-image h1{
-    color:beige;
     display: flex;
     font-size: 52px;
+
+    background: linear-gradient(-60deg, #904e45, #bc3826, #e73c7e, #ee7752, #edca4e, #5dad17, #00ffd0, #51a2ff, #6644fd, #d400ff, #ff0088);
+    background-size: 300%;
+
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
     
-    animation: RGB-light 3s infinite;
+    animation: RGB-light 10s infinite;
 }
 
 .python-cards{
@@ -27,15 +33,12 @@ body{
 
 @keyframes RGB-light {
     0%{
-        color:rgb(106, 0, 14);
+        background-position: 0 50%;
     }
-    25%{
-        color:rgb(52, 94, 0);
-    }
-    70%{
-        color: rgb(0, 0, 86);
+    50%{
+        background-position: 100% 50%;
     }
     100%{
-        color:rgb(106, 0, 14);
+        background-position: 0 50%;
     }
 }
