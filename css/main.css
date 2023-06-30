@@ -8,6 +8,14 @@ body{
 }
 
 
+.button-back a{
+	color: whitesmoke;
+	font-size: 26px;
+	position: absolute;
+	margin-top: 10px;
+	margin-left: 1%;
+}
+
 .header-text{
 	color:white;
 	font-size: 500%;
@@ -98,6 +106,7 @@ header{
 
 .image-links p2{
 	margin-right: 20%;
+	margin-top: 1%;
 }
 
 .image-links p3{
@@ -150,15 +159,6 @@ header{
 	}
 	100%{
 		text-shadow: 1px 1px 2px white, 0 0 1em rgba(255, 255, 255, 0), 0 0 0.2em red;
-	}
-}
-
-@keyframes slide-up {
-	0%{
-		transform: translateY(100%);
-	}
-	100%{
-		transform: translateY(0%);
 	}
 }
 

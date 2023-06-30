@@ -25,7 +25,11 @@ body{
     animation: RGB-light 10s infinite;
 }
 
-.python-cards{
+.python-image.illustrator h1{
+    margin-left: 3%;
+}
+
+.block-cards{
     position: relative;
     display: flex;
 }
