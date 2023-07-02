@@ -87,6 +87,9 @@
     bottom: 27%;
 }
 
+.main-card.first-illustrator{
+    padding-right: 80%;
+}
 
 .image-card p{
     position:sticky;
