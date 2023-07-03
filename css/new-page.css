@@ -37,8 +37,8 @@ body{
 .block-cards p1{
     color:#00ffd0;
     font-size: 18px;
-    /* text-align: right; */
-    padding-left:100%;
+    text-align: right;
+    padding-left:190%;
     margin-left: 10%;
 }
 
