@@ -35,11 +35,29 @@ body{
 }
 
 .block-cards p1{
+    position: absolute;
     color:#00ffd0;
     font-size: 18px;
     text-align: right;
-    padding-left:190%;
     margin-left: 10%;
+}
+
+.block-cards p2{
+    position:absolute;
+    color:#00ffd0;
+    font-size: 18px;
+    left: 5%;
+    text-align: left;
+}
+
+.card.left-illustrator{
+    margin-top: 5%;
+    margin-left: 65%;
+}
+
+.card.right-illustrator{
+    margin-top: 5%;
+    margin-left: 5%;
 }
 
 
