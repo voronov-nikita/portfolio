@@ -37,17 +37,19 @@ body{
 .block-cards p1{
     position: absolute;
     color:#00ffd0;
-    font-size: 18px;
-    text-align: right;
+    font-size: 26px;
+    text-align: center;
     margin-left: 10%;
+    margin-top: 10%;
 }
 
 .block-cards p2{
     position:absolute;
     color:#00ffd0;
-    font-size: 18px;
+    font-size: 26px;
     left: 5%;
-    text-align: left;
+    text-align: center;
+    margin-right: 10%;
 }
 
 .card.left-illustrator{
