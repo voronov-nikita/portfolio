@@ -52,6 +52,23 @@ header{
 	animation: text-light 3s ease-in-out infinite;
 }
 
+.text-404{
+	margin-top: 10%;	
+	margin-bottom: 5%;
+	color: whitesmoke;
+	text-align: center;
+	align-items: center;
+	animation: text-light 5s ease-in-out infinite;
+}
+
+.text-404 h1{
+	font-size: 74px;
+}
+
+.text-404 h2{
+	color: rgba(245, 245, 245, 0.779)
+}
+
 
 
 .main-about-text{
