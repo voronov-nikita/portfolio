@@ -15,7 +15,7 @@
 
 
 ## **Useful Links**
-1. Мой Сайт-портфолио - [voronov-nikita.github.io/my-sait/](https://voronov-nikita.github.io/my-sait/)
+1. Мой Сайт-портфолио - [voronov-nikita.github.io/my-sait/](https://voronov-nikita.github.io/portfolio/)
 2. Основы создания сайта - [youtube.com]()
 3. Github Pages - [pages.github.com](https://pages.github.com/)
 4. 
@@ -31,4 +31,4 @@
 
 <br><br>
 
-###### 28.06.2023 - last chage for README.
+###### 26.09.2023 - last chage for README.
