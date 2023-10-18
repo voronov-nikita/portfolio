@@ -10,7 +10,8 @@
 3. [More Information](/README.md#more-information)
 
 ## **About**
-Сайт-портфолио, на мой взягляд, это очень интересная идея с множесвом интересных реализаций. 
+Сайт-портфолио.
+На мой взягляд, это очень интересная идея с множесвом интересных реализаций. 
 В процессе создания сайта были задействованы HTML5, CSS6, JavaScript. Со временем будут добавлены новые карточки с проектами и новые страницы с контентом.
 
 
@@ -18,7 +19,6 @@
 1. Мой Сайт-портфолио - [voronov-nikita.github.io/my-sait/](https://voronov-nikita.github.io/portfolio/)
 2. Основы создания сайта - [youtube.com]()
 3. Github Pages - [pages.github.com](https://pages.github.com/)
-4. 
 
 
 ## **More Information**
@@ -31,4 +31,4 @@
 
 <br><br>
 
-###### 26.09.2023 - last chage for README.
+###### 19.10.2023 - last chage for README.
