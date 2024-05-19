@@ -1,13 +1,16 @@
 import React from 'react'
-import { ScrollView, Button, View } from 'react-native'
-import { BlockWidget } from './Components'
+import { ScrollView, Button, View, Dimensions} from 'react-native'
+import { BlockWidget, ResponsiveGrid } from './Components'
 import { projectsStyles } from './StylesPage'
 import { ProjectImages } from './config'
 
 export const ProjectsScreen = ({ navigation }) => {
+    const columns = isSmallScreen() ? 1 : 2
+    const spacing = 10
+
     return (
         <View style={projectsStyles.main}>
-            <ScrollView style={projectsStyles.container}>
+            <ResponsiveGrid columns={columns} spacing={spacing}>
                 <BlockWidget
                     title="Test1"
                     imageSource={ProjectImages.project1}
@@ -28,8 +31,23 @@ export const ProjectsScreen = ({ navigation }) => {
                     imageSource={ProjectImages.project3}
                     description="A serene path through a dense forest."
                 />
-            </ScrollView>
+                <BlockWidget
+                    title="Test5"
+                    imageSource={ProjectImages.project3}
+                    description="A serene path through a dense forest."
+                />
+                <BlockWidget
+                    title="Test6"
+                    imageSource={ProjectImages.project3}
+                    description="A serene path through a dense forest."
+                />
+            </ResponsiveGrid>
             <Button title="Go to Home" onPress={() => navigation.navigate('Home')} />
         </View>
     )
 }
+
+const isSmallScreen = () => {
+    const { width } = Dimensions.get('window')
+    return width < 415
+};

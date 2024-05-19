@@ -85,7 +85,6 @@ export const homeStyle = StyleSheet.create({
 // для страницы с проектами
 export const projectsStyles = StyleSheet.create({
     main: {
-        flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
     },
@@ -93,6 +92,7 @@ export const projectsStyles = StyleSheet.create({
         backgroundColor: '#f0f0f0',
         padding: 20,
         borderRadius: 10,
+        height: '80%',
         maxHeight: '90%',
     },
 })
