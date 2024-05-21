@@ -49,5 +49,5 @@ export const ProjectsScreen = ({ navigation }) => {
 
 const isSmallScreen = () => {
     const { width } = Dimensions.get('window')
-    return width < 415
+    return width < 415;
 };
