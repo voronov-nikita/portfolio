@@ -2,7 +2,7 @@ import * as React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
 
-// Импортируйте ваши экраны
+// Импорт экранов
 import { HomeScreen } from './pages/HomePage'
 import { ProjectsScreen } from './pages/ProjectsPage'
 
