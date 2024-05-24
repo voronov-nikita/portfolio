@@ -5,12 +5,12 @@ import { projectsStyles } from './StylesPage'
 import { ProjectImages } from './config'
 
 export const ProjectsScreen = ({ navigation }) => {
-    const columns = isSmallScreen() ? 1 : 2
-    const spacing = 10
 
     return (
-        <View style={projectsStyles.main}>
-            <ResponsiveGrid columns={columns} spacing={spacing}>
+        <View style={{flex: 1}}>
+            <ScrollView>
+                {/* <View> */}
+
                 <BlockWidget
                     title="Test1"
                     imageSource={ProjectImages.project1}
@@ -41,13 +41,9 @@ export const ProjectsScreen = ({ navigation }) => {
                     imageSource={ProjectImages.project3}
                     description="A serene path through a dense forest."
                 />
-            </ResponsiveGrid>
+                {/* </View> */}
+            </ScrollView>
             <Button title="Go to Home" onPress={() => navigation.navigate('Home')} />
         </View>
     )
 }
-
-const isSmallScreen = () => {
-    const { width } = Dimensions.get('window')
-    return width < 415;
-};
