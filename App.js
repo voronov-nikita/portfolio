@@ -1,6 +1,7 @@
 import * as React from 'react'
 import { NavigationContainer } from '@react-navigation/native'
 import { createStackNavigator } from '@react-navigation/stack'
+import { View } from 'react-native'
 
 // Импорт экранов
 import { HomeScreen } from './pages/HomePage'
@@ -10,11 +11,13 @@ const Stack = createStackNavigator()
 
 export default function App() {
     return (
-        <NavigationContainer>
-            <Stack.Navigator initialRouteName="Home">
-                <Stack.Screen name="Home" component={HomeScreen} />
-                <Stack.Screen name="Projects" component={ProjectsScreen} />
-            </Stack.Navigator>
-        </NavigationContainer>
+        <View style={{ flex: 1 }}>
+            <NavigationContainer>
+                <Stack.Navigator initialRouteName="Home">
+                    <Stack.Screen name="Home" component={HomeScreen} />
+                    <Stack.Screen name="Projects" component={ProjectsScreen} />
+                </Stack.Navigator>
+            </NavigationContainer>
+        </View>
     )
 }

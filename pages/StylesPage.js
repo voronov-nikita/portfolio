@@ -12,6 +12,7 @@ export const mainStyle = StyleSheet.create({
 
     oneLineV: {
         flex: 1,
+        flexDirection: 'row',
         flexWrap: 'nowrap',
         textAlign: 'left',
         alignItems: 'left',
@@ -21,14 +22,13 @@ export const mainStyle = StyleSheet.create({
 
 export const blockStyle = StyleSheet.create({
     container: {
-        padding: 16,
-        borderRadius: 8,
+        padding: 20,
+        margin: 10,
         backgroundColor: '#fff',
         shadowColor: '#000',
         shadowOpacity: 0.1,
         shadowRadius: 5,
         elevation: 3,
-        marginBottom: 16,
     },
 
     image: {
@@ -52,8 +52,6 @@ export const blockStyle = StyleSheet.create({
 export const homeStyle = StyleSheet.create({
     container: {
         flex: 1,
-        flexDirection: 'row',
-        flexWrap: 'nowrap',
         backgroundColor: '#0d1117',
     },
 
