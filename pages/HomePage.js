@@ -1,5 +1,5 @@
 import { View, Text, Image, Button } from 'react-native'
-import { homeStyle, logoStyle, mainStyle } from './StylesPage'
+import { homeStyle, logoStyle, mainStyle } from './Styles'
 import { ConfigImage } from './config'
 import React from 'react'
 

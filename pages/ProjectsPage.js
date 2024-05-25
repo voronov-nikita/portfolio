@@ -1,7 +1,7 @@
 import React from 'react'
 import { ScrollView, Button, View, Text, Image } from 'react-native'
 import { BlockWidget, ResponsiveGrid } from './Components'
-import { projectsStyles, blockStyle } from './StylesPage'
+import { projectsStyles, blockStyle } from './Styles'
 import { ProjectImages } from './config'
 
 export const ProjectsScreen = ({ navigation }) => {

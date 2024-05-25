@@ -96,6 +96,17 @@ export const projectsStyles = StyleSheet.create({
     },
 })
 
+export const conferences = StyleSheet.create({
+    container: {
+        flex: 1,
+    },
+    item: {
+        padding: 20,
+        margin: 10,
+        backgroundColor: '#f0f0f0',
+    },
+})
+
 // для изображения
 export const logoStyle = StyleSheet.create({
     logo: {

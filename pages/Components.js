@@ -1,4 +1,4 @@
-import { blockStyle } from './StylesPage'
+import { blockStyle } from './Styles'
 import { View, Text, Image } from 'react-native'
 import React from 'react'
 
