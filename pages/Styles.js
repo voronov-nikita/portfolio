@@ -29,6 +29,7 @@ export const blockStyle = StyleSheet.create({
         shadowOpacity: 0.1,
         shadowRadius: 5,
         elevation: 3,
+        flex: 1
     },
 
     image: {

@@ -1,79 +1,72 @@
 import React from 'react'
-import { ScrollView, Button, View, Text, Image } from 'react-native'
-import { BlockWidget, ResponsiveGrid } from './Components'
+import { FlatList, Button, View, Image, Text } from 'react-native'
+import { BlockWidget } from './Components'
 import { projectsStyles, blockStyle } from './Styles'
 import { ProjectImages } from './config'
 
 export const ProjectsScreen = ({ navigation }) => {
+    const elements = [
+        {
+            id: '1',
+            title: 'Элемент 1',
+            imageSource: ProjectImages.project1,
+            description: 'Небольшое описание',
+        },
+        {
+            id: '2',
+            title: 'Элемент 2',
+            imageSource: ProjectImages.project2,
+            description: 'Небольшое описание',
+        },
+        {
+            id: '3',
+            title: 'Элемент 3',
+            imageSource: ProjectImages.project3,
+            description: 'Небольшое описание',
+        },
+        {
+            id: '4',
+            title: 'Элемент 4',
+            imageSource: ProjectImages.project3,
+            description: 'Небольшое описание',
+        },
+        {
+            id: '5',
+            title: 'Элемент 5',
+            imageSource: ProjectImages.project3,
+            description: 'Небольшое описание',
+        },
+        {
+            id: '6',
+            title: 'Элемент 5',
+            imageSource: ProjectImages.project3,
+            description: 'Небольшое описание',
+        },
+        {
+            id: '7',
+            title: 'Элемент 5',
+            imageSource: ProjectImages.project3,
+            description: 'Небольшое описание',
+        },
+    ]
+
+    // Функция для рендеринга каждого элемента
+    const renderItem = ({ item }) => (
+        <View>
+            <Image source={item.imageSource} style={blockStyle.image} resizeMode="cover"/>
+            <Text>{item.title}</Text>
+            <Text>{item.description}</Text>
+        </View>
+    )
+
     return (
-        <ScrollView style={{ flexGrow: 1 }}>
-            <View style={blockStyle.container}>
-                <Text>ПРивет</Text>
-            </View>
-            <View style={blockStyle.container}>
-                <Text>ПРивет</Text>
-            </View>
-            <View style={blockStyle.container}>
-                <Text>ПРивет</Text>
-            </View>
-            <View style={blockStyle.container}>
-                <Text>ПРивет</Text>
-            </View>
-            <View style={blockStyle.container}>
-                <Text>ПРивет</Text>
-            </View>
-            <View style={blockStyle.container}>
-                <Text>ПРивет</Text>
-            </View>
-            <View style={blockStyle.container}>
-                <Text>ПРивет</Text>
-            </View>
-            <View style={blockStyle.container}>
-                <Text>ПРивет</Text>
-            </View>
-            <View style={blockStyle.container}>
-                <Text>ПРивет</Text>
-            </View>
-            <View style={blockStyle.container}>
-                <Text>ПРивет</Text>
-            </View>
-            <View style={blockStyle.container}>
-                <Text>ПРивет</Text>
-            </View>
-            <View style={blockStyle.container}>
-                <Text>ПРивет</Text>
-            </View>
-            {/* <BlockWidget
-                title="Test1"
-                require("../assets/images/test1.jpg")={ProjectImages.project1}
-                description="A beautiful landscape with mountains and a river."
+        <View>
+            <FlatList
+                data={elements}
+                renderItem={renderItem}
+                keyExtractor={item => item.id}
             />
-            <BlockWidget
-                title="Test2"
-                require("../assets/images/test1.jpg")={ProjectImages.project2}
-                description="The skyline of a bustling city during sunset."
-            />
-            <BlockWidget
-                title="Test3"
-                require("../assets/images/test1.jpg")={ProjectImages.project3}
-                description="A serene path through a dense forest."
-            />
-            <BlockWidget
-                title="Test4"
-                require("../assets/images/test1.jpg")={ProjectImages.project3}
-                description="A serene path through a dense forest."
-            />
-            <BlockWidget
-                title="Test5"
-                require("../assets/images/test1.jpg")={ProjectImages.project3}
-                description="A serene path through a dense forest."
-            />
-            <BlockWidget
-                title="Test6"
-                require("../assets/images/test1.jpg")={ProjectImages.project3}
-                description="A serene path through a dense forest."
-            /> */}
-        </ScrollView>
+        </View>
         // <Button title="Go to Home" onPress={() => navigation.navigate('Home')} />
     )
 }
