@@ -11,13 +11,11 @@ const Stack = createStackNavigator()
 
 export default function App() {
     return (
-        <View style={{ flex: 1 }}>
-            <NavigationContainer>
-                <Stack.Navigator initialRouteName="Home">
-                    <Stack.Screen name="Home" component={HomeScreen} />
-                    <Stack.Screen name="Projects" component={ProjectsScreen} />
-                </Stack.Navigator>
-            </NavigationContainer>
-        </View>
+        <NavigationContainer>
+            <Stack.Navigator initialRouteName="Home">
+                <Stack.Screen name="Home" component={HomeScreen} />
+                <Stack.Screen name="Projects" component={ProjectsScreen} />
+            </Stack.Navigator>
+        </NavigationContainer>
     )
 }

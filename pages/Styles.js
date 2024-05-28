@@ -22,14 +22,21 @@ export const mainStyle = StyleSheet.create({
 
 export const blockStyle = StyleSheet.create({
     container: {
+        backgroundColor: '#f9c2ff',
         padding: 20,
-        margin: 10,
-        backgroundColor: '#fff',
-        shadowColor: '#000',
-        shadowOpacity: 0.1,
-        shadowRadius: 5,
-        elevation: 3,
-        flex: 1
+        marginVertical: 8,
+        marginHorizontal: 16,
+        flexDirection: 'row', // Располагает изображение и текст в строку
+        alignItems: 'center',
+        flex: 1,
+        // padding: 20,
+        // margin: 10,
+        // backgroundColor: '#fff',
+        // shadowColor: '#000',
+        // shadowOpacity: 0.1,
+        // shadowRadius: 5,
+        // elevation: 3,
+        // flex: 1
     },
 
     image: {
@@ -83,10 +90,9 @@ export const homeStyle = StyleSheet.create({
 
 // для страницы с проектами
 export const projectsStyles = StyleSheet.create({
-    main: {
+    newnew: {
         flex: 1,
-        // justifyContent: 'center',
-        // alignItems: 'center',
+        marginTop: 10,
     },
     container: {
         backgroundColor: '#f0f0f0',
