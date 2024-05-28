@@ -21,34 +21,21 @@ export const mainStyle = StyleSheet.create({
 })
 
 export const blockStyle = StyleSheet.create({
-    container: {
+    item: {
         backgroundColor: '#f9c2ff',
         padding: 20,
         marginVertical: 8,
         marginHorizontal: 16,
-        flexDirection: 'row', // Располагает изображение и текст в строку
         alignItems: 'center',
-        flex: 1,
-        // padding: 20,
-        // margin: 10,
-        // backgroundColor: '#fff',
-        // shadowColor: '#000',
-        // shadowOpacity: 0.1,
-        // shadowRadius: 5,
-        // elevation: 3,
-        // flex: 1
     },
 
     image: {
         width: '100%',
-        height: 200,
-        borderRadius: 8,
-        marginBottom: 8,
+        height: '20%',
     },
     title: {
-        fontSize: 18,
-        fontWeight: 'bold',
-        marginBottom: 8,
+        fontSize: 32,
+        marginLeft: 10,
     },
     description: {
         fontSize: 14,
@@ -90,9 +77,9 @@ export const homeStyle = StyleSheet.create({
 
 // для страницы с проектами
 export const projectsStyles = StyleSheet.create({
-    newnew: {
+    global: {
         flex: 1,
-        marginTop: 10,
+        // marginTop: 10,
     },
     container: {
         backgroundColor: '#f0f0f0',
