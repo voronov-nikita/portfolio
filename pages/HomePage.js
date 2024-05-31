@@ -1,25 +1,29 @@
-import { View, Text, Image, Button } from 'react-native'
-import { homeStyle, logoStyle, mainStyle } from './Styles'
-import { ConfigImage } from './config'
-import React from 'react'
+import * as React from 'react'
+import { View, Text, Button, StyleSheet } from 'react-native'
 
-// экран, содержащий всю основную и базовую информацию
 export const HomeScreen = ({ navigation }) => {
     return (
-        <View style={homeStyle.container}>
-            {/* <View style={mainStyle.verticalCenter}>
-                <Image source={ConfigImage.mainLogo} style={logoStyle.logo} />
-            </View> */}
-
-            <View style={mainStyle.oneLineV}>
-                <Text style={homeStyle.textHead}> Воронов Никита </Text>
-                <Text style={homeStyle.textMain}> Начинающий разработчик </Text>
-                <Text style={homeStyle.textStatus}> еще учусь </Text>
-            </View>
+        <View style={styles.container}>
+            <Text style={styles.title}>Welcome to the App</Text>
             <Button
-                title="Go to Details"
-                onPress={() => navigation.navigate('Projects')}
+                title="Go to Carousel"
+                onPress={() => navigation.navigate('Carousel')}
             />
         </View>
     )
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#f0f0f0',
+    },
+
+    title: {
+        fontSize: 24,
+        fontWeight: 'bold',
+        marginBottom: 20,
+    },
+})

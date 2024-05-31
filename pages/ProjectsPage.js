@@ -1,86 +1,80 @@
-import React from 'react'
-import { FlatList, Button, View, Image, Text, StyleSheet } from 'react-native'
-import { BlockWidget } from './Components'
-import { projectsStyles, blockStyle } from './Styles'
-import { ProjectImages } from './config'
+import React from 'react';
+import { View, Text, Image, StyleSheet, Dimensions } from 'react-native';
+import Carousel from 'react-native-snap-carousel';
 
-export const ProjectsScreen = ({ navigation }) => {
-    const data = [
-        {
-            id: '1',
-            title: 'Элемент 1',
-            image: ProjectImages.project1,
-            description: 'Описание',
-        },
-        {
-            id: '2',
-            title: 'Элемент 2',
-            image: ProjectImages.project2,
-            description: 'Описание',
-        },
-        {
-            id: '3',
-            title: 'Элемент 3',
-            image: ProjectImages.project3,
-            description: 'Описание',
-        },
-        {
-            id: '4',
-            title: 'Элемент 4',
-            image: ProjectImages.project3,
-            description: 'Описание',
-        },
-        {
-            id: '5',
-            title: 'Элемент 5',
-            image: ProjectImages.project3,
-            description: 'Описание',
-        },
-        {
-            id: '6',
-            title: 'Элемент 5',
-            image: ProjectImages.project3,
-            description: 'Описание',
-        },
-        {
-            id: '7',
-            title: 'Элемент 5',
-            image: ProjectImages.project3,
-            description: 'Описание',
-        },
-        {
-            id: '8',
-            title: 'Элемент 5',
-            image: ProjectImages.project3,
-            description: 'Описание',
-        },
-        {
-            id: '9',
-            title: 'Элемент 5',
-            image: ProjectImages.project3,
-            description: 'Описание',
-        },
-    ]
+const data = [
+    {
+        title: 'Title 1',
+        description: 'Description for block 1',
+        image: 'https://via.placeholder.com/350x150',
+    },
+    {
+        title: 'Title 2',
+        description: 'Description for block 2',
+        image: 'https://via.placeholder.com/350x150',
+    },
+    {
+        title: 'Title 3',
+        description: 'Description for block 3',
+        image: 'https://via.placeholder.com/350x150',
+    },
+]
 
-    const renderItem = ({ item }) => (
-        <View style={blockStyle.item}>
-            {/* <Image
-                source={item.image}
-                style={blockStyle.image}
-                resizeMode="cover" // или "contain", в зависимости от ваших требований
-            /> */}
-            <Text style={blockStyle.title}>{item.title}</Text>
-            <Text style={blockStyle.description}>{item.description}</Text>
-        </View>
-    )
+const { width: viewportWidth } = Dimensions.get('window')
+
+export const ProjectsScreen = () => {
+    const renderItem = ({ item }) => {
+        return (
+            <View style={styles.slide}>
+                <Image source={{ uri: item.image }} style={styles.image} />
+                <Text style={styles.title}>{item.title}</Text>
+                <Text style={styles.description}>{item.description}</Text>
+            </View>
+        )
+    }
 
     return (
-        <View style={projectsStyles.global}>
-            <FlatList
+        <View style={styles.container}>
+            <Carousel
                 data={data}
                 renderItem={renderItem}
-                keyExtractor={item => item.id}
+                sliderWidth={viewportWidth}
+                itemWidth={viewportWidth - 60}
+                layout={'default'}
             />
         </View>
     )
 }
+
+const styles = StyleSheet.create({
+    container: {
+        flex: 1,
+        justifyContent: 'center',
+        alignItems: 'center',
+        backgroundColor: '#f0f0f0',
+    },
+    slide: {
+        backgroundColor: 'white',
+        borderRadius: 8,
+        height: 300,
+        padding: 20,
+        marginLeft: 25,
+        marginRight: 25,
+        justifyContent: 'center',
+        alignItems: 'center',
+    },
+    image: {
+        width: '100%',
+        height: 150,
+        borderRadius: 8,
+    },
+    title: {
+        fontSize: 24,
+        fontWeight: 'bold',
+        marginVertical: 10,
+    },
+    description: {
+        fontSize: 16,
+        textAlign: 'center',
+    },
+})
