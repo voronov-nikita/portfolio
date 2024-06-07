@@ -4,7 +4,7 @@ import { createStackNavigator } from '@react-navigation/stack'
 
 // Импорт экранов
 import { HomeScreen } from './pages/HomePage'
-import { ProjectsScreen } from './pages/ProjectsPage'
+// import { ProjectsScreen } from './pages/ProjectsPage'
 
 const Stack = createStackNavigator()
 
@@ -13,7 +13,7 @@ export default function App() {
         <NavigationContainer>
             <Stack.Navigator initialRouteName="Home">
                 <Stack.Screen name="Home" component={HomeScreen} />
-                <Stack.Screen name="Projects" component={ProjectsScreen} />
+                {/* <Stack.Screen name="Projects" component={ProjectsScreen} /> */}
             </Stack.Navigator>
         </NavigationContainer>
     )
