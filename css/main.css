@@ -1,0 +1,13 @@
+body{
+    display: flex;
+    color:aliceblue;
+    background-color: rgb(26, 0, 28);
+}
+
+.main-info{
+    flex: 1;
+    align-items: right;
+    text-align: center;
+    justify-content: center;
+    padding: 100%;
+}
