@@ -1,13 +1,19 @@
-body{
+body {
     display: flex;
-    color:aliceblue;
-    background-color: rgb(26, 0, 28);
+    background-color: rgb(0, 0, 0);
 }
 
-.main-info{
-    flex: 1;
-    align-items: right;
-    text-align: center;
-    justify-content: center;
-    padding: 100%;
+.info {
+    margin-left: 5%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2vw;
+}
+
+.main-info {
+    color: beige;
+    margin-bottom: -3%;
+}
+
+.more-info {
+    color: rgba(245, 245, 220, 0.511);
 }
