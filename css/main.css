@@ -3,9 +3,9 @@ body {
     background-color: rgb(255, 255, 255);
 }
 
-.layer1{
+.layer1 {
     /* margin: -10%; */
-    padding: -10%;
+    /* padding: -10%; */
     width: 100%;
     height: 100%;
 }
@@ -23,4 +23,37 @@ body {
 
 .more-info {
     color: rgba(245, 245, 220, 0.511);
+}
+
+.btn {
+    background-color: azure;
+    color: #000;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin: 10px;
+    text-align: center;
+    width: 10%;
+    height: 100%;
+}
+
+.btn:hover {
+    background-color: rgb(183, 195, 195);
+}
+
+.online {
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    /* height: 100%; */
+    justify-content: space-between;
+}
+
+.center-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 }
