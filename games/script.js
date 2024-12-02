@@ -1,1 +1,0 @@
-Handlebars.registerPartial('footer', Handlebars.compile($('footer.html').html()));
