@@ -15,7 +15,7 @@
     left: 0;
     width: 200%;
     height: 200%;
-    background: radial-gradient(circle, rgba(255,255,255,0.13) 0%, rgba(255,255,255,0) 40%);
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.13) 0%, rgba(255,255,255,0) 40%);
     opacity: 0.5;
     animation: moveFog 20s linear infinite;
     z-index: -1;
