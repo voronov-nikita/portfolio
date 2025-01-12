@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Неоновая квадратная столбчатая диаграмма</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        body {
+            background-color: #121212; /* Темный фон */
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            display: flex;
+            align-items: center; /* Центрирование по вертикали */
+        }
+        canvas {
+            border: 2px solid #4caf50; /* Неоновая рамка */
+            box-shadow: 0 0 20px #4caf50; /* Неоновый эффект */
+            width: 50px; /* Уменьшение ширины диаграммы */
+            height: 50px; /* Уменьшение высоты диаграммы */
+        }
+        .text-block {
+            max-width: 300px; /* Максимальная ширина текстового блока */
+            margin-left: 50px; /* Отступ между диаграммой и текстом */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <canvas id="myChart" width="100px" height="100px"></canvas>
+        <div class="text-block">
+            <h2>Умения</h2>
+            <p>В этом разделе представлены навыки программирования:</p>
+            <ul>
+                <li>Python: 5 баллов</li>
+                <li>JavaScript: 4 балла</li>
+                <li>C++: 3 балла</li>
+                <li>Kotlin: 2 балла</li>
+                <li>Dart: 1 балл</li>
+                <li>Other: 0 баллов</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        const ctx = document.getElementById('myChart').getContext('2d');
+        const myChart = new Chart(ctx, {
+            type: 'bar', // Тип диаграммы (столбчатая)
+            data: {
+                labels: ['Python', 'JavaScript', 'C++', 'Kotlin', 'Dart', 'Other'],
+                datasets: [{
+                    label: 'Умения',
+                    data: [5, 4, 3, 2, 1, 0],
+                    backgroundColor: [
+                        'rgba(76, 175, 80, 0.6)', // Python
+                        'rgba(255, 99, 132, 0.6)', // JavaScript
+                        'rgba(255, 205, 86, 0.6)', // C++
+                        'rgba(54, 162, 235, 0.6)', // Kotlin
+                        'rgba(153, 102, 255, 0.6)', // Dart
+                        'rgba(255, 159, 64, 0.6)'  // Other
+                    ],
+                    borderColor: [
+                        'rgba(76, 175, 80, 1)', // Обводка для Python
+                        'rgba(255, 99, 132, 1)', // Обводка для JavaScript
+                        'rgba(255, 205, 86, 1)', // Обводка для C++
+                        'rgba(54, 162, 235, 1)', // Обводка для Kotlin
+                        'rgba(153, 102, 255, 1)', // Обводка для Dart
+                        'rgba(255, 159, 64, 1)'  // Обводка для Other
+                    ],
+                    borderWidth: 2, // Ширина обводки
+                }]
+            },
+            options: {
+                indexAxis: 'y', // Переворот диаграммы на 90 градусов
+                responsive: true,
+                scales: {
+                    x: {
+                        beginAtZero: true,
+                        grid: {
+                            color: '#333', // Цвет сетки
+                        }
+                    },
+                    y: {
+                        grid: {
+                            color: '#333', // Цвет сетки
+                        }
+                    }
+                },
+                plugins: {
+                    legend: {
+                        labels: {
+                            color: 'white' // Цвет текста легенды
+                        }
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
