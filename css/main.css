@@ -128,8 +128,8 @@ body {
 canvas {
     border: 2px solid #adaf4c;
     box-shadow: 0 0 20px #adaf4c;
-    width: 10px;
-    height: 10px;
+    width: 500px;
+    height: 500px;
 }
 
 .block-skill {

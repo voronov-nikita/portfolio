@@ -10,7 +10,7 @@ const myChart = new Chart(ctx, {
         ],
         datasets: [
             {
-                data: [1, 2, 3, 4, 5, 6],
+                data: [22, 12, 5, 2, 1, 1],
                 backgroundColor: [
                     'rgba(54, 162, 235, 0.6)',
                     'rgba(255, 205, 86, 0.6)',
