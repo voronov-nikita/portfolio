@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML с JSON</title>
+</head>
+<body>
+    <h1>Пример HTML с JSON</h1>
+    <p>Этот HTML-документ содержит JSON-данные, которые можно извлечь при парсинге.</p>
+
+    <script type="application/json" id="json-data">
+    {
+        "message": "Привет, мир!",
+        "description": "Это пример JSON-данных, встроенных в HTML."
+    }
+    </script>
+
+    <script>
+        // Пример извлечения JSON из HTML
+        const jsonData = document.getElementById('json-data').textContent;
+        const parsedData = JSON.parse(jsonData);
+        console.log(parsedData); // Выведет объект JSON в консоль
+    </script>
+</body>
+</html>
