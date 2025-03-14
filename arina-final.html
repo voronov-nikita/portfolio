@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>С Днем Рождения!</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #ffdde1, #ffe4c4, #d1f4ff);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            font-family: 'Arial Black', sans-serif;
+            overflow: hidden;
+        }
+        .confetti {
+            position: absolute;
+            width: 10px;
+            height: 10px;
+            background-color: red;
+            opacity: 0.7;
+            border-radius: 50%;
+            animation: fall linear infinite;
+        }
+        @keyframes fall {
+            0% { transform: translateY(-10vh) translateX(0); opacity: 1; }
+            100% { transform: translateY(100vh) translateX(20px); opacity: 0; }
+        }
+        .message {
+            font-size: 2.5rem;
+            color: black;
+            padding: 20px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        .subtext {
+            font-size: 1.5rem;
+            color: black;
+            padding: 20px;
+            font-family: Arial, sans-serif;
+            opacity: 0.4;
+            position: absolute;
+            bottom: 10vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="message">Поздравляю<br>с Днем Рождения! 🥳</div>
+    <div class="subtext">Поздравляю, ты решила все мои задачи, напиши мне, хочу увидеться, поздравить 😁</div>
+    <script>
+        function createConfetti() {
+            const confetti = document.createElement('div');
+            confetti.classList.add('confetti');
+            document.body.appendChild(confetti);
+            
+            const colors = ['#ff0000', '#00ff00', '#0000ff', '#ffcc00', '#ff66b2'];
+            confetti.style.backgroundColor = colors[Math.floor(Math.random() * colors.length)];
+            
+            confetti.style.left = Math.random() * 100 + 'vw';
+            confetti.style.animationDuration = (Math.random() * 3 + 2) + 's';
+            
+            setTimeout(() => { confetti.remove(); }, 5000);
+        }
+        
+        setInterval(createConfetti, 300);
+    </script>
+</body>
+</html>

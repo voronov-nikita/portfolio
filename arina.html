@@ -86,7 +86,7 @@
     function checkCombination() {
         const enteredCombination = Array.from(cells).map(cell => cell.value);
         if (enteredCombination.join('') === correctCombination.join('')) {
-            window.location.href = 'https://google.com'; // Переход на другую страницу
+            window.location.href = './arina-final.html'; // Переход на другую страницу
         } else if (enteredCombination.every(cell => cell.length === 1)) {
             cells.forEach(cell => {
                 cell.value = '';
