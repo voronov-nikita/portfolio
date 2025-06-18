@@ -7,10 +7,17 @@ body {
     background-color: #181818;
 }
 
-.title-block {
+.title-block-h1{
     text-align: center;
     color: #f0f0f0;
     margin-bottom: -3%;
+}
+
+.title-block-h2 {
+    text-align: center;
+    color: #919191;
+    margin-bottom: -3%;
+    margin-top: 4%;
 }
 
 .elem {
@@ -143,7 +150,10 @@ canvas {
 
 @media (max-width: 768px) {
 
-    .title-block {
+    .title-block-h1 {
+        margin-bottom: 0;
+    }
+    .title-block-h2 {
         margin-bottom: 0;
     }
     .elem {
