@@ -1,22 +1,16 @@
 {
     "cards": [
         {
-            "title": "НАЗВАНИЕ ПРОЕКТА",
-            "description": "Текстовое описание текстовое описание текстовое описание текстовое описание текстовое описание текстовое описание.",
-            "image": "../img/robotics.jpg",
-            "link": "https://example.com"
+            "title": "BikeStat",
+            "description": "Многофункциональный комплекс приложения + специального браслет-устройства + сервера для сбора статистики движения велосипедистов и подбора им персональных рекомендаций.",
+            "image": "../img/bikestat.png",
+            "link": "https://github.com/voronov-nikita/BikeStat"
         },
         {
-            "title": "НАЗВАНИЕ ПРОЕКТА",
-            "description": "Текстовое описание текстовое описание текстовое описание текстовое описание текстовое описание текстовое описание.",
-            "image": "../img/robotics.jpg",
-            "link": "https://example.com"
-        },
-        {
-            "title": "НАЗВАНИЕ ПРОЕКТА",
-            "description": "Текстовое описание текстовое описание текстовое описание текстовое описание текстовое описание текстовое описание.",
-            "image": "../img/robotics.jpg",
-            "link": "https://example.com"
+            "title": "MyBanker",
+            "description": "Персональное приложение для учета и ведения финасовых операций: покупки, продажи, переводы и т.д.",
+            "image": "https://github.com/voronov-nikita/MyBanker/blob/main/assets/4x/icon%404x.png",
+            "link": "https://github.com/voronov-nikita/MyBanker"
         }
     ]
 }
