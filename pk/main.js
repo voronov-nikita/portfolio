@@ -1,17 +1,21 @@
 // Отображение текущего времени
         function updateCurrentTime() {
             const now = new Date();
-            const options = { 
-                weekday: 'long', 
-                year: 'numeric', 
-                month: 'long', 
-                day: 'numeric',
+            const timeOptions = { 
                 hour: '2-digit', 
                 minute: '2-digit', 
                 second: '2-digit',
                 hour12: false
             };
-            document.getElementById('current-time').textContent = now.toLocaleDateString('ru-RU', options);
+            const dateOptions = {
+                weekday: 'short',
+                day: 'numeric',
+                month: 'short',
+                year: 'numeric'
+            };
+            
+            document.getElementById('current-time').textContent = now.toLocaleTimeString('ru-RU', timeOptions);
+            document.getElementById('date-info').textContent = now.toLocaleDateString('ru-RU', dateOptions);
         }
         
         // Обновление таймера
@@ -20,13 +24,10 @@
             const endDate = new Date(document.getElementById('end-date').value);
             const now = new Date();
             
-            if (!isNaN(startDate.getTime())){
-                updateCountdown(now, startDate, 'до начала');
+            if (!isNaN(startDate.getTime())) {
+                updateCountdown(now, startDate, 'Начало: ');
             } else if (!isNaN(endDate.getTime())) {
-                updateCountdown(now, endDate, 'до окончания');
-            } else {
-                // Если даты не выбраны, показываем текущее время
-                updateCurrentTime();
+                updateCountdown(now, endDate, 'Окончание: ');
             }
         }
         
@@ -34,8 +35,10 @@
             let diff = Math.floor((targetDate - now) / 1000);
             
             if (diff <= 0) {
-                document.getElementById('timer').innerHTML = `<div style="font-size: 2rem;">Событие завершено</div>`;
+                document.getElementById('timer').style.opacity = '0.5';
                 return;
+            } else {
+                document.getElementById('timer').style.opacity = '1';
             }
             
             const days = Math.floor(diff / (3600 * 24));
@@ -50,7 +53,13 @@
             document.getElementById('minutes').textContent = String(minutes).padStart(2, '0');
             document.getElementById('seconds').textContent = String(seconds).padStart(2, '0');
             
-            document.getElementById('current-time').textContent = `${prefix}: ${targetDate.toLocaleString('ru-RU')}`;
+            const dateOptions = {
+                day: 'numeric',
+                month: 'short',
+                hour: '2-digit',
+                minute: '2-digit'
+            };
+            document.getElementById('date-info').textContent = prefix + targetDate.toLocaleDateString('ru-RU', dateOptions);
         }
         
         // Инициализация
@@ -70,4 +79,8 @@
                 updateCurrentTime();
                 updateTimer();
             }, 1000);
+            
+            // Обновляем при изменении дат
+            document.getElementById('start-date').addEventListener('change', updateTimer);
+            document.getElementById('end-date').addEventListener('change', updateTimer);
         });
